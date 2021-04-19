@@ -1,0 +1,12 @@
+---
+- name: master
+  hosts: all
+  become: true
+
+  roles:
+    - updates
+    - java
+    - python
+    - mysql
+    - copy
+    - docker
